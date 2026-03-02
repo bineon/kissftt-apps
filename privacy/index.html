@@ -1,37 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — KISSFTT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',-apple-system,sans-serif;background:#fafafa;color:#1a1a1a;-webkit-font-smoothing:antialiased;line-height:1.7}
-    .content{max-width:640px;margin:0 auto;padding:48px 24px 80px}
-    h1{font-size:28px;font-weight:700;margin-bottom:8px}
-    .updated{font-size:13px;color:#999;margin-bottom:32px}
-    h2{font-size:18px;font-weight:600;margin:28px 0 12px}
-    p{font-size:15px;color:#444;margin-bottom:16px}
-    a{color:#666;text-decoration:none}
-    .back{display:inline-block;margin-bottom:24px;font-size:14px}
-  </style>
+  <meta name="description" content="Privacy policy for KISSFTT apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="content">
-    <a class="back" href="/">&larr; Home</a>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 2, 2026</p>
-    <h2>Overview</h2>
-    <p>KISSFTT apps are designed with privacy in mind. We do not collect, store, or transmit any personal data.</p>
-    <h2>MDViewer</h2>
-    <p>MDViewer operates entirely on your device. It reads Markdown files you choose to open and stores your recent file history and reading position locally on your device using standard iOS storage. No data is sent to any server.</p>
-    <h2>Data Collection</h2>
-    <p>We do not collect any personal information, usage analytics, or telemetry data. Our apps do not contain any third-party tracking or advertising SDKs.</p>
-    <h2>Third-Party Services</h2>
-    <p>Our apps do not integrate with any third-party services that collect user data.</p>
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, contact us at <a href="mailto:support@kissftt.com">support@kissftt.com</a>.</p>
+  <header class="site-header">
+    <a class="site-logo" href="/">KISSFTT</a>
+    <div class="lang-selector">
+      <button class="lang-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="lang-btn-text">English</span>
+      </button>
+      <div class="lang-dropdown"></div>
+    </div>
+  </header>
+
+  <a class="back-link" href="/">&larr; <span data-i18n="backToApps">All Apps</span></a>
+
+  <div class="content-page">
+    <h1 data-i18n="privacyTitle">Privacy Policy</h1>
+    <p class="updated" data-i18n="privacyUpdated">Last updated: March 2, 2026</p>
+
+    <h2 data-i18n="privacyOverviewTitle">Overview</h2>
+    <p data-i18n="privacyOverview">KISSFTT apps are designed with privacy in mind. We do not collect, store, or transmit any personal data.</p>
+
+    <h2 data-i18n="privacyMdviewerTitle">MDViewer</h2>
+    <p data-i18n="privacyMdviewer">MDViewer operates entirely on your device. It reads Markdown files you choose to open and stores your recent file history and reading position locally on your device using standard iOS storage. No data is sent to any server.</p>
+
+    <h2 data-i18n="privacyDataTitle">Data Collection</h2>
+    <p data-i18n="privacyData">We do not collect any personal information, usage analytics, or telemetry data. Our apps do not contain any third-party tracking or advertising SDKs.</p>
+
+    <h2 data-i18n="privacyThirdPartyTitle">Third-Party Services</h2>
+    <p data-i18n="privacyThirdParty">Our apps do not integrate with any third-party services that collect user data.</p>
+
+    <h2 data-i18n="privacyContactTitle">Contact</h2>
+    <p><span data-i18n="privacyContact">If you have questions about this privacy policy, contact us at</span> <a href="mailto:support@kissftt.com">support@kissftt.com</a></p>
   </div>
+
+  <footer class="site-footer">
+    <p>
+      <span data-i18n="footerCopyright">&copy; 2026 KISSFTT</span>
+      &nbsp;&middot;&nbsp;
+      <a href="mailto:support@kissftt.com" data-i18n="footerContact">Contact</a>
+      &nbsp;&middot;&nbsp;
+      <a href="/privacy/" data-i18n="footerPrivacy">Privacy</a>
+      &nbsp;&middot;&nbsp;
+      <a href="/terms/" data-i18n="footerTerms">Terms</a>
+    </p>
+  </footer>
+
+  <script src="/i18n.js"></script>
 </body>
 </html>
