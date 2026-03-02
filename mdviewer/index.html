@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDViewer — Lightweight Markdown Reader</title>
+  <meta name="description" content="MDViewer is a fast, clean Markdown reader for iOS. Open .md files from Files, iCloud, or any app.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#fafafa;color:#1a1a1a;-webkit-font-smoothing:antialiased}
+    .hero{padding:64px 24px 48px;text-align:center;max-width:640px;margin:0 auto}
+    .hero-icon{width:120px;height:120px;border-radius:28px;margin:0 auto 24px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.12)}
+    .hero-icon img{width:100%;height:100%}
+    .hero h1{font-size:32px;font-weight:700;letter-spacing:-0.5px}
+    .hero .tagline{font-size:17px;color:#666;margin-top:8px}
+    .badge-row{margin-top:24px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .store-badge{height:44px;border-radius:10px;background:#1a1a1a;color:#fff;padding:0 20px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;text-decoration:none;transition:background .2s}
+    .store-badge:hover{background:#333}
+    .features{max-width:640px;margin:0 auto;padding:0 24px 64px}
+    .features h2{font-size:20px;font-weight:600;margin-bottom:24px;text-align:center}
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .feature{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:20px}
+    .feature .icon{font-size:24px;margin-bottom:8px}
+    .feature h3{font-size:15px;font-weight:600;margin-bottom:4px}
+    .feature p{font-size:13px;color:#666;line-height:1.5}
+    footer{text-align:center;padding:32px 24px;font-size:13px;color:#999;border-top:1px solid #eee}
+    footer a{color:#666;text-decoration:none}
+    footer a:hover{text-decoration:underline}
+    .back{display:inline-block;padding:16px 24px;font-size:14px;color:#666;text-decoration:none}
+    .back:hover{color:#1a1a1a}
+    @media(max-width:480px){.feature-grid{grid-template-columns:1fr}.hero h1{font-size:28px}}
+  </style>
+</head>
+<body>
+  <a class="back" href="/">&larr; All Apps</a>
+  <div class="hero">
+    <div class="hero-icon"><img src="/icons/mdviewer.png" alt="MDViewer"></div>
+    <h1>MDViewer</h1>
+    <p class="tagline">A lightweight, fast Markdown reader for iOS.</p>
+    <div class="badge-row">
+      <a class="store-badge" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store
+      </a>
+    </div>
+  </div>
+  <div class="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">📖</div>
+        <h3>GitHub Flavored</h3>
+        <p>Full GFM support: tables, task lists, code highlighting, and more.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">⚡</div>
+        <h3>Instant Open</h3>
+        <p>Open from Files, iCloud Drive, or any app via Share Sheet.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔍</div>
+        <h3>Search & Navigate</h3>
+        <p>Full-text search and table of contents for quick navigation.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📑</div>
+        <h3>Reading Position</h3>
+        <p>Automatically saves and restores your reading position.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2026 KISSFTT &middot; <a href="mailto:support@kissftt.com">Contact</a> &middot; <a href="/privacy">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
